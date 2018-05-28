@@ -1,0 +1,17 @@
+package com.ejk;
+
+public class Stddev {
+
+		public static double ejRound(Double targetValue, int sequence){
+			// Fill the Logic
+			double decimal = Math.pow(10, sequence);
+			double returnValue = Math.round(targetValue*decimal)/decimal;
+			return returnValue;
+		}
+
+		public static void main(String[] args) {
+			double testValue = 12.23522;
+			double answer = ejRound(testValue, 2);
+			System.out.println("The answer is " + answer);
+		}
+}
